@@ -1,0 +1,62 @@
+.tsplit{
+  height:20%;
+  width:100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding:-20px;
+ text-align:center;
+  }
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color:black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.waviy {
+  position: relative;
+}
+.waviy span {
+  position: relative;
+  display: inline-block;
+  font-size: 40px;
+  color: #fff;
+  text-transform: uppercase;
+  animation: flip 2s infinite;
+  animation-delay: calc(.2s * var(--i))
+}
+@keyframes flip {
+  0%,80% {
+    transform: rotateY(360deg) 
+  }
+}
+.waviy1 {
+  position: relative;
+ cursor:pointer;
+}
+
+.waviy1 span{
+  position: relative;
+  display: inline-block;
+  font-size: 15px;
+  color: #fff;
+  text-transform: uppercase;
+  animation: flip 2s ;
+}
+@keyframes flip {
+  0%,80% {
+    transform: rotateY(360deg) 
+  }
+}
+.wall
+{background-image:linear-gradient(black,grey,red,black)
+}
+

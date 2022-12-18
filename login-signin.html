@@ -1,0 +1,111 @@
+<style>
+.tsplit{
+  height:10%;
+  width:100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+ text-align:center;
+  }
+.split {
+  height: 90%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+ bottom: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+text-align:center;
+}
+
+.left {
+  left: 0;
+  background-image: linear-gradient( #a4893d, #c7af6b,#ff3a22);
+}
+
+.right {
+  right: 0;
+  background-image: linear-gradient( #a4893d,#ff3a22, #c7af6b);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color:black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.waviy {
+  position: relative;
+}
+.waviy span {
+  position: relative;
+  display: inline-block;
+  font-size: 40px;
+  color: #fff;
+  text-transform: uppercase;
+  animation: flip 2s infinite;
+  animation-delay: calc(.2s * var(--i))
+}
+@keyframes flip {
+  0%,80% {
+    transform: rotateY(360deg) 
+  }
+}
+</style>
+</head>
+<body>
+<div class="tsplit">
+<div class="waviy">
+   <span style="--i:1">	G</span>
+   <span style="--i:2">A</span>
+   <span style="--i:3">M</span>
+   <span style="--i:5">E</span>
+   <span style="--i:6">R </span>
+   <span style="--i:7">'S</span>
+   <span style="--i:8"></span>
+   <span style="--i:11">H</span>
+   <span style="--i:12">U</span>
+   <span style="--i:13">B</span>
+</div>
+</div>
+<div class="split left">
+ <P1><h1>LOGIN</h1><br><h3>
+username: <input type="text"><br>
+password: <input type="text"><br><br>
+<a href="main homepage.html" target="_top"><input type="button" value="sumbit"></a>
+</h3></P1>
+<h5><a href="error.html">forgot password?</a>
+</h5>
+</div>
+
+<div class="split right">
+  <P1><h1>SIGN IN</h1><br>
+<h3>first name: <input type="text"><br>
+last name: <input type="text"><br>
+username: <input type="text"><br>
+password: <input type="text"><br>
+confirm password: <input type="text"><br>
+gender:<br>
+<input type ="radio">male<br>
+<input type ="radio">female<br>
+<input type ="radio">others<br>
+<label>choose your age</label>
+<select>
+<option>below 18</option>
+<option>18</option>
+<option>above 18</option></select><br><br>
+<a href="main homepage.html" target="_top"><input type="button" value="sumbit"></h3>
+<a href="aud\RAP GOD FAST PART Lyrics .mp3">want a random password???</a>
+</div>
+     
+</body>
+</html> 
